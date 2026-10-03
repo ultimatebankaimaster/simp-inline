@@ -1,0 +1,15 @@
+! Title: SimpCity Inline Ad Blocker Filters
+! Description: Custom ABP filters for simpcity.cr
+! Expires: 4 days
+
+! --- Network Rule to Block Inline Ad Scripts & Popups on SimpCity ---
+||wpadmngr.com^$domain=simpcity.cr
+||clickadu.net^$domain=simpcity.cr
+*$script,third-party,domain=simpcity.cr
+
+! --- Element Hiding for Leftover Inline Ad Containers ---
+simpcity.cr##div[class*="ad-box"]
+simpcity.cr##div[id*="google_ads"]
+simpcity.cr##.inline-ad
+simpcity.cr##.ad-banner
+simpcity.cr##.ad-placement
